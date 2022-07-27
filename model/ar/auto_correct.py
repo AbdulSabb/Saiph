@@ -152,7 +152,7 @@ def get_corrections(word, probs, vocab, n=2, verbose=False):
     return n_best
 
 
-def get_correction_suggestions(word):
+def get_correction_suggestions_ar(word):
     word = word.lower()
     word_l = list(process_data(r'\data\ar_arz_wiki_corpus.json')['word'])
     vocab = set(word_l)
