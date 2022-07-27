@@ -92,13 +92,6 @@ def edit_one_letter(word, allow_switches=True):
 
 
 def edit_two_letters(word, allow_switches=True):
-    '''
-    Input:
-        word: the input string/word
-    Output:
-        edit_two_set: a set of strings with all possible two edits
-    '''
-
     edit_two_set = set()
 
     edit_one = edit_one_letter(word, allow_switches=allow_switches)
