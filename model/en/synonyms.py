@@ -1,8 +1,10 @@
+import pandas as pd
 from nltk.corpus import wordnet
 import nltk
 nltk.download('omw-1.4')
 nltk.download('wordnet')
-
+import requests
+from bs4 import BeautifulSoup
 
 def get_synonyms(word):
     word = word.lower()
