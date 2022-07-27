@@ -13,7 +13,7 @@ def get_count(word_l):
 
 
 def get_probs():
-    data = process_data(r'data\unigram_freq.csv')
+    data = process_data(r'data\unigram_freq_en.csv')
     full_count = data['count'].sum()
     probs = dict(zip(data['word'], data['count'] / full_count))
     return probs
@@ -127,7 +127,7 @@ def get_corrections(word, probs, vocab, n=2, verbose=False):
 
 def get_correction_suggestions(word):
     word = word.lower()
-    word_l = list(process_data(r'\data\unigram_freq.csv')['word'])
+    word_l = list(process_data(r'\data\unigram_freq_en.csv')['word'])
     vocab = set(word_l)
     probs = get_probs()
     tmp_corrections = get_corrections(word, probs, vocab, 2, verbose=False)
@@ -137,12 +137,3 @@ def get_correction_suggestions(word):
     tmp_corrections_ordered_list = tmp_corrections_ordered.keys()
 
     return list(tmp_corrections_ordered_list)
-
-
-# my_word = 'laptob'
-# tmp_corrections = get_corrections(my_word, probs, vocab, 2, verbose=False)
-# tmp_corrections_dict = dict(tmp_corrections)
-# tmp_corrections_ordered = {k: v for k, v in reversed(sorted(tmp_corrections_dict.items(), key=lambda item: item[1]))}
-# for k, v in tmp_corrections_ordered.items():
-#     print(f"word: {k},  prob: {v:.6f}")
-# print(tmp_corrections_ordered)
