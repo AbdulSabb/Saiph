@@ -37,7 +37,7 @@ def get_synonyms_enhanced(word):
 def get_synonyms_data(word):
     word = 'hello'
     word = word.lower()
-    data = pd.read_csv('/content/drive/MyDrive/data/synonyms_data/synonyms.csv')
+    data = pd.read_csv('data/synonyms.csv')
     data = data.dropna()
 
     synonyms = data[data['lemma'] == word]['synonyms']
