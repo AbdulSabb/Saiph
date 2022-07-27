@@ -29,10 +29,15 @@ Latest commit c7953ee 4 minutes ago
 
 from collections import Counter
 import pandas as pd
-
+import json
 
 def process_data(file_name):
-    data = pd.read_csv(file_name)
+    data_list = []
+    file_data = open("data/ar_arz_wiki_corpus.json")
+    for data in file_data:
+        data_list.append((json.loads(data))['text'])
+    txt = " ".join(data_list)
+    data = txt.split()
     return data
 
 
