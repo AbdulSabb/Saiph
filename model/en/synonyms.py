@@ -6,6 +6,7 @@ nltk.download('wordnet')
 import requests
 from bs4 import BeautifulSoup
 
+
 def get_synonyms(word):
     word = word.lower()
     synonyms_list = []
@@ -34,8 +35,21 @@ def get_synonyms_enhanced(word):
                 synonyms_list.append(w)
     synonyms_list = list(set(synonyms_list))
     return synonyms_list
+
+
+def get_synonyms_data(word):
+    word = word.lower()
+    data = pd.read_csv('D:\Programs\PyCharm\Projects\SaiphSearch\data\synonyms_en.csv')
+    data = data.dropna()
+
+    synonyms = data[data['lemma'] == word]['synonyms']
+    if len(synonyms.values) == 0:
+      synonyms = data[data['lemma'].str.contains(word, case=False)]['synonyms']
+
+    synonyms_list = synonyms.values[0].split(';')
+    return synonyms_list
   
-  
+    
 def get_synonyms_en(word):
     response = requests.get(f'https://synonyms.reverso.net/synonym/en/{word}', headers={"User-Agent": "Mozilla/5.0"})
     soup = BeautifulSoup(response.text, 'html.parser')
