@@ -1,7 +1,7 @@
 import lemminflect
 
 
-def get_inflections(word):
+def get_inflections_en(word):
     word = word.lower()
     all_inf = []
     upos = ['VERB', 'NOUN', 'ADV', 'ADJ']
