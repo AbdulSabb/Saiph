@@ -30,10 +30,10 @@ Saiph examines files, web pages, and databases looking for certain information t
 Saiph would perform searches on web pages, text files, e-books, databases, and more resources that will be included later. The initial prototype will be presented as a chrome extension to showcase the ease of access. It would only work inside web pages and could be accessed quickly through the conventional shortcut CTRL + F. In addition, it will support both Arabic and English languages by the first release to make it accessible for MENA users in specific and worldwide users in general.
 
 Saiph also provides a personalized AI experience for each user to search for what the user needs based on previously collected data and quick periodical quizzes to enhance the search as well as make it more accurate as the user uses it more and more. Domain-oriented searches such as searching for a domain term (medical, technical, economic, etc) will also be included in the future.
-#### saves you time
+#### Saves you time
 Saiph reduces a tremendous amount of time for users, so instead of using the traditional searching tool that is provided by all browsers or by searching manually (line by line) through the web page. 
 Saiph will support people with psychological disorders that make it difficult to meaningfully express what they have in mind to search more comfortably and confidently.
-## what makes it different  (the benefits )
+## What makes it different  (the benefits )
 Saiph will also support non-native language speakers to find information more quickly with the limited set of vocabulary and grammar they would encounter with ease. 
 Saiph would improve productivity for students and researchers in various fields, generally for any web user of any background and age.
 Saiph will support people with visual difficulties to search faster instead of searching manually and damaging their eyesight. 
