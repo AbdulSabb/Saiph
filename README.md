@@ -64,7 +64,7 @@ Some of the techniques that we used on saiph
 * Functions should do one thing and do it well
 * Using different types of comments 
 ## Code Deployment 
-For demonstration, we’ll be building a chrome extension  that accesses a REST API created on AWS API Gateway which then hits an AWS Lambda function where the model is deployed (we used layers on lambda). We used three layers as a distribution mechanism for libraries , custom runtimes and other functions dependencies.
+For demonstration, we built a chrome extension  that accesses a REST API created on AWS API Gateway which then hits an AWS Lambda function where the model is deployed (we used layers on lambda). We used three layers as a distribution mechanism for libraries , custom runtimes and other functions dependencies.
 #### Lambda
 It allowed us to run the code without managing or provisioning servers since it is a serverless computing service. We are using this service to store user inputs and compute the outputs, and communicate with the REST API to output results to the Front-End (the extension).
 
