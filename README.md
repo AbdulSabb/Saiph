@@ -4,7 +4,7 @@
 ## Contents :
 #### Problem Statement		
 #### Solution Proposal	
-#### what makes it different  (the benefits )	
+#### What makes us different? (Benefits)
 #### Our Models	
 #### Clean Code	
 #### Code Deployment	
@@ -96,6 +96,7 @@ Group words by colors
 If the user click on the orange (+) button, he will be able to control 2 additional features which are:
 Whole word search 
 Case sensitivity
+
 #### Design
 We designed it to simplify the user experience, placing a superb impact.
 After opening the extension the user inputs specific words about the topic he’s searching, then the processed output will appear to the user.
@@ -106,6 +107,8 @@ The extension receives the output of the models, then it’ll be highlighted in 
 * Lemmas
 * Inflections
 
+![](pics/saiph%20extenstion.png)     
+
 #### Web Scraping
 For some AI models we used web scraping to gain data from some linguistic libraries, where web scraping is a form of extracting and gathering data from the web. Such for the Arabic synonyms, we scraped a web library called Reverso which is one of the most reliable linguistic libraries.
 In Addition, to make the process more accurate, we are planning to develop the models by scraping the page in which the user is searching and to include the contents of it in the ai models to offer a solution with higher efficiency and more reliability.
@@ -113,6 +116,9 @@ In Addition, to make the process more accurate, we are planning to develop the m
 With the rapid development of technology especially in the field of AI and NLP which we use daily without even knowing on social media , news , ads and industries etc… 
 Our future model will support 2 new languages (spanish, french) where all the functionalities we have now will be implemented to them.
 Besides new features which will be added to the model, such as recognizing the subject or the category of the text resulting in better functionality to be as practical as possible. It would be able to summarize a text giving more priority to the sentences depending on their subjects.
-The functionality will work as a website and a mobile app to let the users upload files to be processed. 
+The functionality will work as a website and a mobile app to let the users upload files to be processed.
+
 ## Summary
 Saiph is a program that can process any text input data page, to perform accurate searches and get the desired results easily and quickly, considering any word that shares the same meaning by including a linguistic source with it, and by looking for other factors during the search as having the same term in other parts of speech and misspellings, with filters to show only search results that meet the desired criteria.
+### Example 
+![](pics/example.png)
