@@ -74,3 +74,53 @@ some of the techniques that we used on saiph
 For demonstration, we’ll be building a chrome extension  that accesses a REST API created on AWS API Gateway which then hits an AWS Lambda function where the model is deployed (we used layers on lambda). We used three layers as a distribution mechanism for libraries , custom runtimes and other functions dependencies.
 #### Lambda
 It allowed us to run the code without managing or provisioning servers since it is a serverless computing service. We are using this service to store user inputs and compute the outputs, and communicate with the REST API to output results to the Front-End (the extension).
+
+![](pics/aws2.png)
+
+#### s3
+We used this service to store what the user inputs on the front-end and the outputs. on 2 buckets one each.
+
+![](pics/aws%20s3.png)
+
+
+#### Identity Access Management
+We handled the services for each instance through permissions and roles and made a role for our Lambda function to be able to access S3 and API GW.
+
+![](pics/boto3%20s3.png)
+
+* The buckets were made using boto3
+
+### API
+We used a REST API to communicate with the lambda function then it sends the output to the Front-End where in our case it’s the chrome extension, through a fetch API. Using get and post methods .
+In other words we are connecting the backend (python in lambda) to the chrome extension (javascript).
+![](pics/awsAPI.png)
+
+### Extension
+Before we get to the model to implement our project it is a need to highlight all words entered by the user that he wants to search for. Hence, we developed a multi highlight chrome extension using Javascript , jquery, html, and css, where the main features that the user will be using:
+Highlight on-the-fly 
+Auto-highlight Flexible delimiter  
+Savable words list 
+Group words by colors
+If the user click on the orange (+) button, he will be able to control 2 additional features which are:
+Whole word search 
+Case sensitivity
+### Design
+We designed it to simplify the user experience, placing a superb impact.
+After opening the extension the user inputs specific words about the topic he’s searching, then the processed output will appear to the user.
+Our focus on the design was edging towards simplicity and clear typography (eye relaxing ) experience.
+The extension receives the output of the models, then it’ll be highlighted in different colors as:
+* The original word
+* Synonyms
+* Lemmas
+* Inflections
+
+### Web Scraping
+For some AI models we used web scraping to gain data from some linguistic libraries, where web scraping is a form of extracting and gathering data from the web. Such for the Arabic synonyms, we scraped a web library called Reverso which is one of the most reliable linguistic libraries.
+In Addition, to make the process more accurate, we are planning to develop the models by scraping the page in which the user is searching and to include the contents of it in the ai models to offer a solution with higher efficiency and more reliability.
+Future Look 
+With the rapid development of technology especially in the field of AI and NLP which we use daily without even knowing on social media , news , ads and industries etc… ### Future look  
+Our future model will support 2 new languages (spanish, french) where all the functionalities we have now will be implemented to them.
+Besides new features which will be added to the model, such as recognizing the subject or the category of the text resulting in better functionality to be as practical as possible. It would be able to summarize a text giving more priority to the sentences depending on their subjects.
+The functionality will work as a website and a mobile app to let the users upload files to be processed. 
+### summary
+Saiph is a program that can process any text input data page, to perform accurate searches and get the desired results easily and quickly, considering any word that shares the same meaning by including a linguistic source with it, and by looking for other factors during the search as having the same term in other parts of speech and misspellings, with filters to show only search results that meet the desired criteria.
