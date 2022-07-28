@@ -50,7 +50,6 @@ Tashkeel is a smart tool to understand Arabic sentences and do the appropriate f
 The foreign words detector is a model that can detect any loanwords in your sentence.
 There is a huge variation among Arabic speakers, so having the tools to discover each dialect is a must.
 
-We used n-grams Language modeling to determine the probability of any sequence of words especially at the arabic side of the model where arabic is more sensitive to word sequences. We just considered bigrams the next future model will be trained on tri grams and 4 grams .
 ## Clean Code 
 considering future enhancement on saiph clean code is an important step to continue the journey of developing it, and adding new features which is also an Essential step to handle CICD in the future. Some of the qualities that clean code provides in our project : 
 * The code is focused where each function or class do one thing and do it well
