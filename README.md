@@ -1,7 +1,7 @@
 
 ![](img/saiph_logo.png)
 
-## contents :
+## Contents :
 #### Problem Statement		
 #### Solution Proposal	
 #### what makes it different  (the benefits )	
@@ -11,7 +11,7 @@
 #### API	
 #### Extension	
 #### Future Look	
-#### summary	
+#### Summary	
 
 
 
@@ -58,7 +58,7 @@ considering future enhancement on saiph clean code is an important step to conti
 * The code is easy to debug 
 * The code is easy to maintain
 
-some of the techniques that we used on saiph 
+Some of the techniques that we used on saiph 
 * Using long descriptive names that are easy to read
 * Using the same vocabulary.
 * Functions should do one thing and do it well
@@ -115,5 +115,5 @@ With the rapid development of technology especially in the field of AI and NLP w
 Our future model will support 2 new languages (spanish, french) where all the functionalities we have now will be implemented to them.
 Besides new features which will be added to the model, such as recognizing the subject or the category of the text resulting in better functionality to be as practical as possible. It would be able to summarize a text giving more priority to the sentences depending on their subjects.
 The functionality will work as a website and a mobile app to let the users upload files to be processed. 
-## summary
+## Summary
 Saiph is a program that can process any text input data page, to perform accurate searches and get the desired results easily and quickly, considering any word that shares the same meaning by including a linguistic source with it, and by looking for other factors during the search as having the same term in other parts of speech and misspellings, with filters to show only search results that meet the desired criteria.
