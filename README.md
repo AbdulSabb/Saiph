@@ -33,7 +33,7 @@ Saiph also provides a personalized AI experience for each user to search for wha
 #### Saves you time
 Saiph reduces a tremendous amount of time for users, so instead of using the traditional searching tool that is provided by all browsers or by searching manually (line by line) through the web page. 
 Saiph will support people with psychological disorders that make it difficult to meaningfully express what they have in mind to search more comfortably and confidently.
-## What makes it different  (the benefits )
+## What makes us different? (Benefits)
 Saiph will also support non-native language speakers to find information more quickly with the limited set of vocabulary and grammar they would encounter with ease. 
 Saiph would improve productivity for students and researchers in various fields, generally for any web user of any background and age.
 Saiph will support people with visual difficulties to search faster instead of searching manually and damaging their eyesight. 
