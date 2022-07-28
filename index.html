@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea id="highlightWords" spellcheck="false" cols="21" rows="2" style="resize: none;" autofocus></textarea>
+<textarea id="highlightWords2"></textarea>
+<button onclick="server.get_change()">click</button>
+<script>
+    const source = document.getElementById('highlightWords');
+    const result = document.getElementById('highlightWords2');
+
+    const inputHandler = function(e) {
+        result.innerHTML = e.target.value;
+    }
+
+    source.addEventListener('input', inputHandler);
+    source.addEventListener('propertychange', inputHandler);
+</script>
+</body>
+</html>
