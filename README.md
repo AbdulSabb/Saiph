@@ -107,11 +107,12 @@ The extension receives the output of the models, then it’ll be highlighted in 
 * Lemmas
 * Inflections
 
-![](pics/saiph%20extenstion.png)     
+![](pics/saiph%20extenstion.png)          ![](pics/plus.png) 
 
 #### Web Scraping
 For some AI models we used web scraping to gain data from some linguistic libraries, where web scraping is a form of extracting and gathering data from the web. Such for the Arabic synonyms, we scraped a web library called Reverso which is one of the most reliable linguistic libraries.
 In Addition, to make the process more accurate, we are planning to develop the models by scraping the page in which the user is searching and to include the contents of it in the ai models to offer a solution with higher efficiency and more reliability.
+
 ##  Future look
 With the rapid development of technology especially in the field of AI and NLP which we use daily without even knowing on social media , news , ads and industries etc… 
 Our future model will support 2 new languages (spanish, french) where all the functionalities we have now will be implemented to them.
