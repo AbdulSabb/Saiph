@@ -1,7 +1,7 @@
 
 ![](img/saiph_logo.png)
 
-## Contents :
+## Contents
 #### Problem Statement		
 #### Solution Proposal	
 #### What makes us different? (Benefits)
